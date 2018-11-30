@@ -1,0 +1,43 @@
+{
+    "name": "omegachien/seofriendlyurl",
+    "description": ":description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "author name",
+            "email": "author email",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/omegachien/seofriendlyurl",
+    "keywords": ["Laravel", "SeoFriendlyUrl"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "omegachien\\SeoFriendlyUrl\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "omegachien\\SeoFriendlyUrl\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "omegachien\\SeoFriendlyUrl\\SeoFriendlyUrlServiceProvider"
+            ],
+            "aliases": {
+                "SeoFriendlyUrl": "omegachien\\SeoFriendlyUrl\\Facades\\SeoFriendlyUrl"
+            }
+        }
+    }
+}
